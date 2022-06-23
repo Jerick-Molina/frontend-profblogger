@@ -3,9 +3,9 @@ var jwtUser;
 var profile = $('.profile')
 //Use web api to check if its valid
 if(jwt == null){
-    var host = location.origin
+
     profile.hide();
-    $(location).attr('href', host + '/login.html');
+    $(location).attr('href','/login.html');
 }else{
     var logOut = $('.logout')
     logOut.text("log out")

@@ -48,7 +48,7 @@ var createBlog  = $('.blog')
 
   //if user wants to see own profile
     $('.profile').click(function(){
-      $(location).attr('href', host + `/profile.html?userId=${jwtUser.userId}`);
+      $(location).attr('href',`/profile.html?userId=${jwtUser.userId}`);
     })
 
    //if user wants to see a profile by post
@@ -64,7 +64,7 @@ var createBlog  = $('.blog')
     createBlog.click(function(){
     
    
-      $(location).attr('href', host + '/blog.html');
+      $(location).attr('href','/blog.html');
      })
 
  
@@ -110,7 +110,7 @@ var createBlog  = $('.blog')
     // if user tries to create post without being signed in
     createBlog.click(function(){
 
-    $(location).attr('href', host + '/login.html');
+    $(location).attr('href','/login.html');
    })
   }   
 });
@@ -167,7 +167,7 @@ function dataPost(){
     pageBackward.addClass("enabled")
     pageBackward.click(function(){
       currentPage--;
-      $(location).attr('href', host + `?page=${currentPage}`);
+      $(location).attr('href',`?page=${currentPage}`);
      })
   }else if(currentPage != 1 && postNumber == clonedPost.length){
     
