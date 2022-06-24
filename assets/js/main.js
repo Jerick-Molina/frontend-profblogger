@@ -20,7 +20,7 @@
 			small:    [ '481px',   '736px'  ],
 			xsmall:   [ null,      '480px'  ]
 		});
-
+		
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
