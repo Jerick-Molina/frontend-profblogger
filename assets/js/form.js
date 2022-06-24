@@ -47,7 +47,7 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
-                    url:"http://76.186.152.164:80/Account/SignIn",
+                    url:"https://76.186.152.164:80/Account/SignIn",
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
@@ -115,7 +115,7 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
-                    url:"http://76.186.152.164:80/Account/Create",
+                    url:"https://76.186.152.164:80/Account/Create",
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
