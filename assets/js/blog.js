@@ -33,7 +33,7 @@ $(document).ready(function(){
            
             
             $.ajax({
-                url:"https://localhost:7235/Blog/Read",
+                url:"https://76.186.152.164:8080/Blog/Read",
                 type:"GET",
                 headers: { 'blogId': parm },
                 contentType:"application/json; charset=utf-8",
@@ -107,7 +107,7 @@ $(document).ready(function(){
                     Body: body.val()
                 }
                 $.ajax({
-                    url:"https://localhost:7235/Blog/Edit",
+                    url:"https://76.186.152.164:8080/Blog/Edit",
                     type:"POST",
                     headers: {"Authorization":'Bearer ' + jwt},
                     data:JSON.stringify(blog),

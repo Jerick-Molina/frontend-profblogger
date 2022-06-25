@@ -18,7 +18,7 @@ if(jwt == null){
     function getInfo(_callback){
 
         $.ajax({
-            url:"http://192.168.3.139:80/Account/Info",
+            url:"http://76.186.152.164:8080/Account/Info",
             type:"GET",
             headers: {"Authorization":'Bearer ' + jwt ,
             userId : "empty"},

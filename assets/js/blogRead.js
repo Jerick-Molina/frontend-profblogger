@@ -24,7 +24,7 @@ if(jwt == null){
        })
        
        $.ajax({
-        url:"https://localhost:7235/Blog/Read",
+        url:"http://76.186.152.164:8080/Blog/Read",
         type:"GET",
         headers: { 'blogId': parm },
         contentType:"application/json; charset=utf-8",

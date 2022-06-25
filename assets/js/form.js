@@ -47,7 +47,11 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
+<<<<<<< HEAD
                     url:"https://76.186.152.164:80/Account/SignIn",
+=======
+                    url:"http://76.186.152.164:8080/Account/SignIn",
+>>>>>>> 555da63 (updated ports)
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
@@ -115,7 +119,11 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
+<<<<<<< HEAD
                     url:"https://76.186.152.164:80/Account/Create",
+=======
+                    url:"http://76.186.152.164:8080/Account/Create",
+>>>>>>> 555da63 (updated ports)
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
