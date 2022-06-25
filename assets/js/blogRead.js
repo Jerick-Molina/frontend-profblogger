@@ -1,7 +1,7 @@
 var jwt = localStorage.getItem("jwtKey")
 var jwtUser;
 var profile = $('.profile')
-const param = new URLSearchParams(window.location.search)
+ const param = new URLSearchParams(window.location.search)
 const option = {month: 'long', year: 'numeric', day: 'numeric'}
 
 

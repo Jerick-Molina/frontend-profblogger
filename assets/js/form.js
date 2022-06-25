@@ -38,7 +38,7 @@ $( document ).ready(function() {
           }
         })
         if(isFormFilled == true){
-            console.log("hello!!")
+           
                 $('.register-form :button').prop("disabled",true);
                 $('.register-form :button').text("Loging In...");
                 var json = {
@@ -47,13 +47,13 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
-                    url:"https://localhost:7235/Account/SignIn",
+                    url:"https://76.186.152.164:80/Account/SignIn",
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
                     dataType:"json",
                     success: function(data){
-                       
+                        console.log("hello!!")
                         switch(data.statusCode){
                             case 401: 
                             $('.error').text(data.value);
@@ -115,7 +115,7 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
-                    url:"https://localhost:7235/Account/Create",
+                    url:"https://76.186.152.164:80/Account/Create",
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
