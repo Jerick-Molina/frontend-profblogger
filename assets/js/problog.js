@@ -77,7 +77,7 @@ getInfo(() =>{
           if(confirm("Are you sure you want to delete post?")){
 
             $.ajax({
-              url:"https://localhost:7235/Blog/Delete",
+              url:"http://76.186.152.164:8080/Blog/Delete",
               type:"POST",
               headers: {"Authorization":'Bearer ' + jwt ,
               blogId : blog.innerHTML},
@@ -221,7 +221,7 @@ getInfo(() =>{
       
      
       $.ajax({
-        url:"http://localhost:8080/Account/Home",
+        url:"http://76.186.152.164:8080/Account/Home",
         type:"GET",
         headers: {"Authorization":'Bearer ' + jwt},
         contentType:"application/json; charset=utf-8",
@@ -327,7 +327,7 @@ getInfo(() =>{
       
       //Get Name
       $.ajax({
-        url:"http://localhost:8080/Account/Profile",
+        url:"http://76.186.152.164:8080/Account/Profile",
         type:"GET",
         headers: { 'userId': _userId },
         contentType:"application/json; charset=utf-8",
