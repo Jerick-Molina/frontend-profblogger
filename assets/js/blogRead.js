@@ -24,7 +24,7 @@ if(jwt == null){
        })
        
        $.ajax({
-        url:"http://76.186.152.164:8080/Blog/Read",
+        url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Blog/Read",
         type:"GET",
         headers: { 'blogId': parm },
         contentType:"application/json; charset=utf-8",
@@ -37,7 +37,7 @@ if(jwt == null){
             
             $('.post').children('#body').html(value.body);
             $.ajax({
-                url:"https://localhost:7235/Account/Info",
+                url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Info",
                 type:"GET",
                 headers: {   "Authorization":'Bearer ' + jwt,
                 'userId': value.authorId },

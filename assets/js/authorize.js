@@ -18,7 +18,7 @@ if(jwt == null){
     function getInfo(_callback){
 
         $.ajax({
-            url:"http://76.186.152.164:8080/Account/Info",
+            url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Account/Info",
             type:"GET",
             headers: {"Authorization":'Bearer ' + jwt ,
             userId : "empty"},

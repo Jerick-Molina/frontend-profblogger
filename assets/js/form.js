@@ -47,7 +47,7 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
-                    url:"http://76.186.152.164:8080/Account/SignIn",
+                    url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Account/SignIn",
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
@@ -115,7 +115,7 @@ $( document ).ready(function() {
                 }
     
                 $.ajax({
-                    url:"http://76.186.152.164:8080/Account/Create",
+                    url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Account/Create",
                     type:"POST",
                     data:JSON.stringify(json),
                     contentType:"application/json; charset=utf-8",
@@ -126,7 +126,7 @@ $( document ).ready(function() {
                             case 401: 
                             $('.error').text(data.value);
                             $('.error').show();
-                            $('.register-form :button').prop("disabled",false);
+                            $('.register-form :localhost:8080button').prop("disabled",false);
                             $('.register-form :button').text("Create");
                             break
     

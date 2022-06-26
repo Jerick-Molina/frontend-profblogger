@@ -77,7 +77,7 @@ getInfo(() =>{
           if(confirm("Are you sure you want to delete post?")){
 
             $.ajax({
-              url:"http://76.186.152.164:8080/Blog/Delete",
+              url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Blog/Delete",
               type:"POST",
               headers: {"Authorization":'Bearer ' + jwt ,
               blogId : blog.innerHTML},
@@ -221,7 +221,7 @@ getInfo(() =>{
       
      
       $.ajax({
-        url:"http://76.186.152.164:8080/Account/Home",
+        url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Account/Home",
         type:"GET",
         headers: {"Authorization":'Bearer ' + jwt},
         contentType:"application/json; charset=utf-8",
@@ -327,7 +327,7 @@ getInfo(() =>{
       
       //Get Name
       $.ajax({
-        url:"http://76.186.152.164:8080/Account/Profile",
+        url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Account/Profile",
         type:"GET",
         headers: { 'userId': _userId },
         contentType:"application/json; charset=utf-8",
