@@ -37,7 +37,7 @@ if(jwt == null){
             
             $('.post').children('#body').html(value.body);
             $.ajax({
-                url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Info",
+                url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Account/Info",
                 type:"GET",
                 headers: {   "Authorization":'Bearer ' + jwt,
                 'userId': value.authorId },

@@ -5,7 +5,7 @@ var jwtUser;
 if(jwt == null){
     var profile = $('.profile')
     profile.hide();
-    $(location).attr('href','/login.html');
+ //   $(location).attr('href','/login.html');
 }else{
     var logOut = $('.logout')
 
