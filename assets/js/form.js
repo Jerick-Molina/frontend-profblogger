@@ -58,8 +58,7 @@ $( document ).ready(function() {
                             case 401: 
                             $('.error').text(data.value);
                             $('.error').show();
-                            $('.login-form :button').prop("disabled",false);
-                            $('.login-form :button').text("Login");
+                           
                             break
     
                             case 200:
@@ -68,7 +67,8 @@ $( document ).ready(function() {
                             $(location).attr('href', host);
                             break;
                         }
-                       
+                        $('.login-form :button').prop("disabled",false);
+                            $('.login-form :button').text("Login");
                     }
                   })
                 //Everything seems fine here send to DB
@@ -126,8 +126,7 @@ $( document ).ready(function() {
                             case 401: 
                             $('.error').text(data.value);
                             $('.error').show();
-                            $('.register-form :localhost:8080button').prop("disabled",false);
-                            $('.register-form :button').text("Create");
+                           
                             break
     
                             case 200:
@@ -136,7 +135,8 @@ $( document ).ready(function() {
                                 $(location).attr('href', host);
                             break;
                         }
-                       
+                        $('.register-form :localhost:8080button').prop("disabled",false);
+                        $('.register-form :button').text("Create");
                     }
                   })
                 //Everything seems fine here send to DB

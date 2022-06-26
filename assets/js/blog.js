@@ -30,8 +30,8 @@ $(document).ready(function(){
         function editPage(){
             author.text(jwtUser.firstName + " "+ jwtUser.lastName)
             $('.published').text(value)
-           
-            
+
+        if(parm != null){
             $.ajax({
                 url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Blog/Read",
                 type:"GET",
@@ -54,6 +54,8 @@ $(document).ready(function(){
                     }
                 }
               }) 
+        }
+            
         }
 
 
@@ -130,7 +132,7 @@ $(document).ready(function(){
                     Body: body.val()
                 }
                 $.ajax({
-                    url:"https://localhost:7235/Blog/Add",
+                    url:"https://profbloggerv1.proudsand-9bc83248.eastus.azurecontainerapps.io/Blog/Add",
                     type:"POST",
                     headers: {"Authorization":'Bearer ' + jwt},
                     data:JSON.stringify(blog),
